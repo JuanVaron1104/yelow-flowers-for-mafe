@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFD700">
+  <title>Para ti, Mafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating petals container -->
+  <div id="petals-container" aria-hidden="true"></div>
+
+  <!-- Section 1: Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-flower" aria-hidden="true">
+        <img src="img/flowers.png" alt="" class="hero-flower__img">
+      </div>
+      <h1 class="hero__title">Para ti, Mafe</h1>
+      <p class="hero__subtitle">una carta con flores</p>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span class="scroll-indicator__arrow"></span>
+    </div>
+  </section>
+
+  <!-- Section 2: The Letter -->
+  <section class="letter" id="letter">
+    <div class="letter__card">
+      <div class="letter__decoration letter__decoration--top-left" aria-hidden="true">
+        <img src="img/flowers-1.png" alt="" class="letter__flower-img">
+      </div>
+      <div class="letter__decoration letter__decoration--bottom-right" aria-hidden="true">
+        <img src="img/flowers-1.png" alt="" class="letter__flower-img letter__flower-img--flipped">
+      </div>
+
+      <p class="letter__greeting" data-reveal="fade-in">Mafe,</p>
+
+      <p class="letter__text" data-reveal="slide-left">
+        Hoy no puedo darte flores en persona. Me encantaría poder ponértelas en las manos, verte sonreír mientras las recibes... pero la distancia a veces tiene otros planes.
+      </p>
+
+      <p class="letter__text" data-reveal="slide-right">
+        Así que hice estas flores para ti. Las sembré con código, pero cada una lleva lo que siento.
+      </p>
+
+      <p class="letter__text" data-reveal="zoom-in">
+        Quiero que sepas algo: cuando estemos juntos, cuando estemos cerca, <strong>nunca te van a faltar flores.</strong> Ni un solo día.
+      </p>
+
+      <p class="letter__text" data-reveal="slide-left">
+        Cada vez que pienso en ti, una flor más florece en mi corazón. Y pienso en ti más de lo que te imaginas.
+      </p>
+
+      <p class="letter__text" data-reveal="slide-right">
+        Estas flores amarillas son mi promesa. Son mi forma de decirte que, aunque hoy no pueda estar ahí, lo que siento por ti no conoce distancia.
+      </p>
+
+      <p class="letter__text" data-reveal="zoom-in">
+        Un día voy a llenarte de flores de verdad. Mientras tanto, estas son tuyas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3: Flower Garden -->
+  <section class="garden" id="garden">
+    <h2 class="garden__title" data-reveal="zoom-in">Tu jardín</h2>
+    <div class="garden__field">
+      <div class="garden__flower garden__flower--1" data-reveal>
+        <img src="img/sunflower.png" alt="Girasol" class="garden__img">
+      </div>
+      <div class="garden__flower garden__flower--2" data-reveal>
+        <img src="img/flowers-1.png" alt="Flor amarilla" class="garden__img">
+      </div>
+      <div class="garden__flower garden__flower--3" data-reveal>
+        <img src="img/sunflower.png" alt="Girasol" class="garden__img">
+      </div>
+      <div class="garden__flower garden__flower--4" data-reveal>
+        <img src="img/flowers-1.png" alt="Flor amarilla" class="garden__img">
+      </div>
+      <div class="garden__flower garden__flower--5" data-reveal>
+        <img src="img/sunflower.png" alt="Girasol" class="garden__img">
+      </div>
+
+      <!-- Butterfly -->
+      <div class="butterfly" aria-hidden="true">
+        <div class="butterfly__wing butterfly__wing--left"></div>
+        <div class="butterfly__body"></div>
+        <div class="butterfly__wing butterfly__wing--right"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Closing -->
+  <section class="closing" id="closing">
+    <div class="closing__content">
+      <p class="closing__promise" data-reveal="fade-in">
+        Cuando estemos cerca...<br>
+        <span class="closing__highlight">nunca te faltarán flores.</span>
+      </p>
+
+      <div class="closing__bouquet" data-reveal="zoom-in">
+        <img src="img/flowers.png" alt="Ramo de flores amarillas" class="closing__bouquet-img">
+      </div>
+
+      <div class="closing__heart" data-reveal="fade-in" aria-hidden="true">
+        <svg viewBox="0 0 32 32" class="heart-icon">
+          <path d="M16 28s-10-6.5-10-14c0-4 3-7 6.5-7 2 0 3.5 1.5 3.5 1.5S17.5 7 19.5 7C23 7 26 10 26 14c0 7.5-10 14-10 14z" fill="#e74c6f"/>
+        </svg>
+      </div>
+
+      <div class="closing__signature" data-reveal="slide-up">
+        <p class="closing__signoff">Con todo mi amor,</p>
+        <p class="closing__name">Juan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Footer -->
+  <footer class="footer">
+    <p class="footer__text">Hecho con amor</p>
+    <div class="footer__heart" aria-hidden="true">
+      <svg viewBox="0 0 16 16" width="14" height="14">
+        <path d="M8 14s-5-3.25-5-7c0-2 1.5-3.5 3.25-3.5 1 0 1.75.75 1.75.75S9.75 3.5 10.75 3.5 14 5 14 7c0 3.75-6 7-6 7z" fill="#e74c6f"/>
+      </svg>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
